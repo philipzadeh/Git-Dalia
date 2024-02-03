@@ -1,0 +1,28 @@
+        /* Add custom styles for the header here */
+        body {
+            padding-top: 70px; /* Adjust according to your header height */
+        }
+        #header-container {
+            background-color: #ffffff;
+            border: 1px solid #000050;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            width: 10%; /* Adjust the width as needed */
+        }
+        .navbar-nav {
+            width: 75%; /* Adjust the width as needed */
+            text-align: center;
+        }
+        .nav-link {
+            padding: 0 10px;
+        }
+        .divider {
+            border-left: 1px solid #808080; /* Gray color for divider */
+            height: 30px; /* Adjust height as needed */
+            margin-left: 10px; /* Adjust margin as needed */
+            padding-left: 10px; /* Adjust padding as needed */
+        }
