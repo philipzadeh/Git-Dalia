@@ -1,28 +1,233 @@
-        /* Add custom styles for the header here */
-        body {
-            padding-top: 70px; /* Adjust according to your header height */
-        }
-        #header-container {
-            background-color: #ffffff;
-            border: 1px solid #000050;
-            padding: 10px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar-brand {
-            width: 10%; /* Adjust the width as needed */
-        }
-        .navbar-nav {
-            width: 75%; /* Adjust the width as needed */
-            text-align: center;
-        }
-        .nav-link {
-            padding: 0 10px;
-        }
-        .divider {
-            border-left: 1px solid #808080; /* Gray color for divider */
-            height: 30px; /* Adjust height as needed */
-            margin-left: 10px; /* Adjust margin as needed */
-            padding-left: 10px; /* Adjust padding as needed */
-        }
+/* Add this CSS to your style.css file */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+h1, h2, h3, h4, h5{
+    color: #000050;
+}
+
+h1 {
+    font-size: 2.8em;
+    letter-spacing: -3px;
+    font-weight: 600 !important;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 2.1em;
+    font-weight: 600 !important;
+    margin-top: 25px;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 600 !important;
+}
+
+h4{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 1.5em;
+    font-weight: 600 !important;
+}
+
+
+p{
+    margin-top: 27px;
+    color: #000050;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+a{
+    font-size: 0.9em;
+    color: #000050 !important;
+    font-weight: 600 !important; 
+}
+
+.container{
+    max-width: 1400px !important;
+}
+
+.row{
+    margin: 0 !important;
+}
+
+.spacer{
+    width: 100vw;
+    padding: 14px;
+}
+
+#header-container {
+    background-color: #ffffff;
+    border: 1.3px solid #000050;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;    
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar{
+    padding: 0 18px;
+}
+
+.navbar-brand {
+    width: 10%; /* Adjust the width as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    width: 75%; /* Adjust the width as needed */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.nav-link {
+    padding: 17px 25px !important;
+    font-size: 0.9em;
+    transition: background-color ease-in-out .3s;
+    color: #000050 !important;
+}
+
+.nav-link:hover{
+    background-color: #000050;
+    color: white !important;
+}
+
+.active{
+    background: #000050;
+    color: white !important;
+}
+
+.logo{
+    margin-top: 4px;
+}
+
+.quote, .search{
+    color: white;
+}
+
+.divider {
+    
+    width: 15%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+}
+
+.btn{
+    background-color: #000050;
+    border: solid 1px #000050;
+    border-radius: 0px;
+    padding: 8px 35px;
+}
+
+.hero-section{
+    height: 100vh;
+    background: url('assets/hero.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-inner{
+    height: 100%!important;
+    padding: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote{
+    width: 55%;
+}
+
+.search{
+    width: 100%;
+    text-align: right;
+}
+
+.feature-boxes{
+    display: flex;
+    gap: 16px;
+}
+
+.m-50{
+    margin-top: 50px !important;
+}
+
+.py-10{
+    padding: 10% 0%;
+}
+
+.pl-80{
+    padding-left: 80px;
+}
+
+.border{
+    border: solid #000050 1px !important;
+}
+
+#nfdi-section {
+}
+
+.bordered-content {
+    border: 1px solid #000050;
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.border-left{
+    border-left: 1px solid #000050 !important;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.sixty-width{
+    width: 60%;
+}
+
+.fourty-width{
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .half-width{
+        width: 100%;
+    }
+
+    .sixty-width{
+        width: 100%;
+    }
+
+    .fourty-width{
+        width: 100%;
+    }
+    
+}

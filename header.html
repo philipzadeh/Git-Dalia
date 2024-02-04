@@ -7,21 +7,25 @@
     <title>Header Component</title>
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
     <!-- Additional styles go here -->
 </head>
 <body>
 
     <!-- Navigation Bar -->
+<div class="spacer">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-container">
-        <div class="container">
+        <div class="container-header">
 
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="path/to/your/logo.png" alt="Logo" width="100%">
+                <img class="logo" src="assets/Logo.png" alt="Logo" width="100%">
             </a>
 
             <!-- Menu Items -->
             <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home</a>
                 <a class="nav-link" href="#">Working Fields</a>
                 <a class="nav-link" href="#">Glossary</a>
                 <a class="nav-link" href="#">Events</a>
@@ -30,10 +34,12 @@
 
             <!-- Divider with Search Button -->
             <div class="divider">
+                <div class="line"></div>
                 <button class="btn btn-primary">Search Portal</button>
             </div>
 
         </div>
+     </div>
     </nav>
 
 </body>
