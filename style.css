@@ -45,6 +45,11 @@ h5{
     font-weight: 600 !important;
 }
 
+h6{
+    font-size: 1.05em;
+    font-weight: 600;
+    color:#000050;
+}
 
 p{
     margin-top: 27px;
@@ -61,10 +66,26 @@ p{
     margin-top: 16px;
 }
 
+.light{
+    font-weight: 200 !important;
+    font-size: 1em;
+    cursor: pointer;
+}
+
 a{
     font-size: 0.9em;
     color: #000050 !important;
-    font-weight: 600 !important; 
+    font-weight: 600;
+}
+
+.buttonlink{
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 1em;
+}
+
+.buttonlink:hover{
+    text-decoration: none;
 }
 
 .container{
@@ -80,7 +101,7 @@ a{
     width: 100vw;
     padding: 14px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%; 
@@ -116,7 +137,7 @@ a{
 }
 
 .nav-link {
-    padding: 17px 25px !important;
+    padding: 20px 25px !important;
     font-size: 0.9em;
     transition: background-color ease-in-out .3s;
     color: #000050 !important;
