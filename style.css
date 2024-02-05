@@ -19,7 +19,7 @@ h1 {
     letter-spacing: -3px;
     line-height: 1em;
     font-weight: 600 !important;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 h2{
@@ -53,6 +53,14 @@ p{
     font-size: 0.9em;
 }
 
+.black{
+    color: black !important;
+}
+
+.footerp{
+    margin-top: 16px;
+}
+
 a{
     font-size: 0.9em;
     color: #000050 !important;
@@ -60,24 +68,27 @@ a{
 }
 
 .container{
-    max-width: 1400px !important;
+    padding: 0em 5em;
+    max-width: 100% !important;
 }
 
 .row{
-    margin: 0 !important;
+    margin: 0;
 }
 
-.spacer{
+.nav-spacer{
     width: 100vw;
     padding: 14px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%; 
 }
 
 #header-container {
     background-color: #ffffff;
     border: 1.3px solid #000050;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     width: 100%;    
 }
 
@@ -141,8 +152,17 @@ a{
     background-color: #000050;
     border: solid 1px #000050;
     border-radius: 0px;
-    padding: 8px 35px;
+    padding: 8px 30px;
 }
+
+.footer-logo{
+    width: 8rem;
+}
+
+
+
+/*------------- END HEADER & FOOTER CSS----------------*/
+
 
 .hero-section{
     height: 100vh;
@@ -155,11 +175,17 @@ a{
 }
 
 .hero-inner{
-    height: 100%!important;
-    padding: 10em;
+    height: 100vh!important;
+    padding: 14em 0em 7em 0em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.custom-h5{
+    font-size: 1.3em;
+    font-weight: 200 !important;
+    color: white;
 }
 
 .quote{
@@ -171,13 +197,25 @@ a{
     text-align: right;
 }
 
+.icon-spacing{
+    margin-bottom: 5em;
+}
+
+.icon-spacing-2{
+    margin-bottom: 1.5em;
+}
+
 .feature-boxes{
     display: flex;
-    gap: 16px;
+    gap: 10px;
+}
+
+.feature-box{
+    width: 25%;
 }
 
 .m-50{
-    margin-top: 50px !important;
+    margin-top: 60px !important;
 }
 
 .py-10{
@@ -188,11 +226,16 @@ a{
     padding-left: 5% !important;
 }
 
-.border{
-    border: solid #000050 1px !important;
+.pright-5{
+    padding-right: 5em;
 }
 
-#nfdi-section {
+.pleft-5{
+    padding-left: 5em;
+}
+
+.border{
+    border: solid #000050 1px !important;
 }
 
 .bordered-content {
@@ -246,9 +289,20 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+
+
+    .container{
+        padding: 0em 2em;
+        max-width: 100% !important;
+     }
+
     
     .feature-boxes{
         flex-direction: column;
+    }
+
+    .feature-box{
+        width: 100%;
     }
 
     .border-left{
@@ -269,6 +323,14 @@ a{
 
     .fourty-width{
         width: 100%;
+    }
+
+    .pright-5{
+        padding-right: 0;
+    }
+
+    .pleft-5{
+        padding-left: 0;
     }
     
 }
