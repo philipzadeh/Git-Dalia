@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5{
 h1 {
     font-size: 2.8em;
     letter-spacing: -3px;
+    line-height: 1em;
     font-weight: 600 !important;
     margin-top: 10px;
 }
@@ -25,11 +26,13 @@ h2{
     font-size: 2.1em;
     font-weight: 600 !important;
     margin-top: 25px;
+    line-height: 1em;
 }
 
 h3{
     font-size: 1.5em;
     font-weight: 600 !important;
+    line-height: 1em;
 }
 
 h4{
@@ -181,8 +184,8 @@ a{
     padding: 10% 0%;
 }
 
-.pl-80{
-    padding-left: 80px;
+.pl-5{
+    padding-left: 5% !important;
 }
 
 .border{
@@ -194,7 +197,10 @@ a{
 
 .bordered-content {
     border: 1px solid #000050;
-    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.no-top-border{
+ border-top: none !important;
 }
 
 .border-left{
@@ -217,7 +223,42 @@ a{
     width: 40%;
 }
 
+#contact-section .form-control {
+    border-radius: 0; 
+    border: 1px solid #000050; 
+    padding: 22px;
+}
+
+#contact-section label{
+    color: #000050;
+}
+
+#title{
+    -webkit-appearance: none;
+    color: #000050 !important;
+    height: 46px;
+    padding: 0 !important;
+    padding-left: 22px !important;
+}
+
+::placeholder{
+    color: gray !important;
+}
+
 @media screen and (max-width: 768px) {
+    
+    .feature-boxes{
+        flex-direction: column;
+    }
+
+    .border-left{
+        border: none !important;
+    }
+
+    .pl-5{
+        padding: 0 !important;
+    }
+    
     .half-width{
         width: 100%;
     }
