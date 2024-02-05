@@ -309,6 +309,14 @@ a{
     color: gray !important;
 }
 
+.img-fluid{
+    max-height: 95px;
+}
+
+.img-small{
+    height: 90px;
+}
+
 @media screen and (max-width: 768px) {
 
 
