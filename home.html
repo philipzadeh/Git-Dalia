@@ -11,20 +11,21 @@
         <link rel="stylesheet" href="style.css">
     </head>  
 
-    <body>
+<body>
 
  <!-- Header Section -->
+
         <div class="nav-spacer">
             <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-container">
                 <div class="container-header">
         
                     <!-- Logo -->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand mobile-hide" href="#">
                         <img class="logo" src="assets/Logo.png" alt="Logo" width="100%">
                     </a>
-        
+
                     <!-- Menu Items -->
-                    <div class="navbar-nav">
+                    <div class="navbar-nav mobile-hide">
                         <a class="nav-link light active" href="#">Home</a>
                         <a class="nav-link light" href="#">Working Fields</a>
                         <a class="nav-link light" href="#">Glossary</a>
@@ -32,14 +33,38 @@
                         <a class="nav-link light" href="#">Contact</a>
                     </div>
         
-                    <div class="divider">
+                    <div class="divider mobile-hide">
                         <div class="line"></div>
                         <button class="btn btn-primary"><a class="buttonlink" href="#">Search Portal</a></button>
                     </div>
-        
+
+                    <div class="container-header desktop-hide">
+                        <div class="mobile-left-section border-right">
+                            <a class="navbar-brand brand-mobile full-width" href="#">
+                            <img class="logo mt-0" src="assets/Logo Icon.png" alt="Logo" width="100%">
+                        </a>
+                        </div>
+                    
+                        <div class="mobile-mid-section">
+                        <p class="my-0 mx-4">Go to the DALIA Search Portal</p>
+                        </div>
+
+                        <div class="mobile-right-section border-left-mobile text-center">
+                            <i id="menu-button"><svg width="26" height="18" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.75" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                            <rect y="8.25" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                            <rect y="15.75" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                            </svg></i>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </nav>
         </div>
+
+
+
  <!-- Header Section -->
 
 
@@ -67,7 +92,7 @@
         <div class="feature-heading">
             <h4>MISSION & VISION</h4>
             <h1 class="feature-heading full-width">"DALIA - Data literacy <br> for all from the very <br>beginning!"</h1>
-            <p class="mt-4 fourty-width">DALIA promotes the learning and teaching of Data Literacy through the curated provision of open teaching and learning content, empowering everyone to collect, analyze, critically evaluate, and use data in a FAIR way.</p>
+            <p class="mt-4 fourty-width text-block">DALIA promotes the learning and teaching of Data Literacy through the curated provision of open teaching and learning content, empowering everyone to collect, analyze, critically evaluate, and use data in a FAIR way.</p>
         </div>
 
         <!-- Feature Boxes -->
@@ -86,7 +111,11 @@
 
                     <h3>Quality assurance 
                         and continuation</h3>
-                    <p>Generic and domain specific quality standards for learning and teaching material, metadata standards and...</p>
+                    <p class="mobile-hide">Generic and domain specific quality standards for learning and teaching material, metadata standards and...</p>
+                    <a href="#" class="read-more-link desktop-hide">Keep reading <i class="ml-1"><svg width="14" height="12" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5009 7.17413C16.7938 7.46702 16.7938 7.9419 16.5009 8.23479L10.266 14.4698C9.97307 14.7626 9.49819 14.7626 9.2053 14.4698C8.91241 14.1769 8.91241 13.702 9.2053 13.4091L13.7332 8.88124C13.8906 8.72375 13.7791 8.45446 13.5564 8.45446L0.750027 8.45446C0.335814 8.45446 2.67029e-05 8.11868 2.67029e-05 7.70446C2.67029e-05 7.29025 0.335812 6.95446 0.750027 6.95446L13.5564 6.95446C13.7791 6.95446 13.8906 6.68518 13.7332 6.52769L9.23811 2.03264C8.94521 1.73975 8.94521 1.26487 9.23811 0.97198C9.531 0.679087 10.0059 0.679087 10.2988 0.97198L16.5009 7.17413Z" fill="#000050"/>
+                        </svg>
+                        </i></a>
                 </div>
             </div>
 
@@ -99,7 +128,11 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0C9.67157 0 9 0.671573 9 1.5V16.5C9 17.3284 9.67157 18 10.5 18H12.25C12.6642 18 13 18.3358 13 18.75V21.1177C13 21.6985 13.6316 22.0589 14.1316 21.7634L19.7939 18.4173C20.2562 18.1441 20.7832 18 21.3202 18H27.1301C27.6983 18 28.2549 18.1614 28.735 18.4653L33.8488 21.7032C34.3482 22.0194 35 21.6606 35 21.0696V18.75C35 18.3358 35.3358 18 35.75 18H37.5C38.3284 18 39 17.3284 39 16.5V1.5C39 0.671573 38.3284 0 37.5 0H10.5ZM13.75 3.93213C13.3358 3.93213 13 4.26792 13 4.68213C13 5.09634 13.3358 5.43213 13.75 5.43213H34.25C34.6642 5.43213 35 5.09634 35 4.68213C35 4.26792 34.6642 3.93213 34.25 3.93213H13.75ZM13 8.68213C13 8.26792 13.3358 7.93213 13.75 7.93213H34.25C34.6642 7.93213 35 8.26792 35 8.68213C35 9.09634 34.6642 9.43213 34.25 9.43213H13.75C13.3358 9.43213 13 9.09634 13 8.68213ZM13.75 11.9321C13.3358 11.9321 13 12.2679 13 12.6821C13 13.0963 13.3358 13.4321 13.75 13.4321H24.25C24.6642 13.4321 25 13.0963 25 12.6821C25 12.2679 24.6642 11.9321 24.25 11.9321H13.75Z" fill="#000050"/>
                     </svg>
                     <h3>Communication</h3>
-                    <p>Primary aim is to connect the RDM and Data-Literacy Community with DALIA and gather feedback regardin...</p>
+                    <p class="mobile-hide">Primary aim is to connect the RDM and Data-Literacy Community with DALIA and gather feedback regardin...</p>
+                    <a href="#" class="read-more-link desktop-hide">Keep reading <i class="ml-1"><svg width="14" height="12" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5009 7.17413C16.7938 7.46702 16.7938 7.9419 16.5009 8.23479L10.266 14.4698C9.97307 14.7626 9.49819 14.7626 9.2053 14.4698C8.91241 14.1769 8.91241 13.702 9.2053 13.4091L13.7332 8.88124C13.8906 8.72375 13.7791 8.45446 13.5564 8.45446L0.750027 8.45446C0.335814 8.45446 2.67029e-05 8.11868 2.67029e-05 7.70446C2.67029e-05 7.29025 0.335812 6.95446 0.750027 6.95446L13.5564 6.95446C13.7791 6.95446 13.8906 6.68518 13.7332 6.52769L9.23811 2.03264C8.94521 1.73975 8.94521 1.26487 9.23811 0.97198C9.531 0.679087 10.0059 0.679087 10.2988 0.97198L16.5009 7.17413Z" fill="#000050"/>
+                        </svg>
+                        </i></a>
                 </div>
             </div>
 
@@ -113,7 +146,11 @@
                         </svg>
                         
                     <h3>Information model</h3>
-                    <p>The foundation for the knowledge base and ontology are developed in workingfield III based on existing vo...</p>
+                    <p class="mobile-hide">The foundation for the knowledge base and ontology are developed in workingfield III based on existing vo...</p>
+                    <a href="#" class="read-more-link desktop-hide">Keep reading <i class="ml-1"><svg width="14" height="12" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5009 7.17413C16.7938 7.46702 16.7938 7.9419 16.5009 8.23479L10.266 14.4698C9.97307 14.7626 9.49819 14.7626 9.2053 14.4698C8.91241 14.1769 8.91241 13.702 9.2053 13.4091L13.7332 8.88124C13.8906 8.72375 13.7791 8.45446 13.5564 8.45446L0.750027 8.45446C0.335814 8.45446 2.67029e-05 8.11868 2.67029e-05 7.70446C2.67029e-05 7.29025 0.335812 6.95446 0.750027 6.95446L13.5564 6.95446C13.7791 6.95446 13.8906 6.68518 13.7332 6.52769L9.23811 2.03264C8.94521 1.73975 8.94521 1.26487 9.23811 0.97198C9.531 0.679087 10.0059 0.679087 10.2988 0.97198L16.5009 7.17413Z" fill="#000050"/>
+                        </svg>
+                        </i></a>
                 </div>
             </div>
 
@@ -125,7 +162,11 @@
                         </svg>
                         
                     <h3>Infrastucture</h3>
-                    <p>Providing the server infrastructure for the knowledge base is aim of workingfield IV. First and foremost i...</p>
+                    <p class="mobile-hide">Providing the server infrastructure for the knowledge base is aim of workingfield IV. First and foremost i...</p>
+                    <a href="#" class="read-more-link desktop-hide">Keep reading <i class="ml-1"><svg width="14" height="12" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5009 7.17413C16.7938 7.46702 16.7938 7.9419 16.5009 8.23479L10.266 14.4698C9.97307 14.7626 9.49819 14.7626 9.2053 14.4698C8.91241 14.1769 8.91241 13.702 9.2053 13.4091L13.7332 8.88124C13.8906 8.72375 13.7791 8.45446 13.5564 8.45446L0.750027 8.45446C0.335814 8.45446 2.67029e-05 8.11868 2.67029e-05 7.70446C2.67029e-05 7.29025 0.335812 6.95446 0.750027 6.95446L13.5564 6.95446C13.7791 6.95446 13.8906 6.68518 13.7332 6.52769L9.23811 2.03264C8.94521 1.73975 8.94521 1.26487 9.23811 0.97198C9.531 0.679087 10.0059 0.679087 10.2988 0.97198L16.5009 7.17413Z" fill="#000050"/>
+                        </svg>
+                        </i></a>
                 </div>
             </div>
 
@@ -150,7 +191,11 @@
                     <h3>Search- and 
                         Recommendation 
                         Service</h3>
-                    <p>Workingfield V is creating the possibilities for user interaction with DALIA through a web application...</p>
+                    <p class="mobile-hide">Workingfield V is creating the possibilities for user interaction with DALIA through a web application...</p>
+                    <a href="#" class="read-more-link desktop-hide">Keep reading <i class="ml-1"><svg width="14" height="12" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5009 7.17413C16.7938 7.46702 16.7938 7.9419 16.5009 8.23479L10.266 14.4698C9.97307 14.7626 9.49819 14.7626 9.2053 14.4698C8.91241 14.1769 8.91241 13.702 9.2053 13.4091L13.7332 8.88124C13.8906 8.72375 13.7791 8.45446 13.5564 8.45446L0.750027 8.45446C0.335814 8.45446 2.67029e-05 8.11868 2.67029e-05 7.70446C2.67029e-05 7.29025 0.335812 6.95446 0.750027 6.95446L13.5564 6.95446C13.7791 6.95446 13.8906 6.68518 13.7332 6.52769L9.23811 2.03264C8.94521 1.73975 8.94521 1.26487 9.23811 0.97198C9.531 0.679087 10.0059 0.679087 10.2988 0.97198L16.5009 7.17413Z" fill="#000050"/>
+                        </svg>
+                        </i></a>
                 </div>
             </div>
         </div>
@@ -167,7 +212,7 @@
                 <div class="content sixty-width">
                     <h4>Our Connection</h4>
                     <h2>We are part of NFDI e.V.</h2>
-                    <p>DALIA is closely connected to the NFDI e.V. and creates active synergies with the NFDI sections Training and Education (EduTrain) and Ethical, Legal, and Social aspects (ELSA) but also Metadata, Terminology, and Provenance and Infra. The project makes an important contribution to increasing data literacy and establishing a data culture in the academic environment and beyond.</p>
+                    <p class="text-block">DALIA is closely connected to the NFDI e.V. and creates active synergies with the NFDI sections Training and Education (EduTrain) and Ethical, Legal, and Social aspects (ELSA) but also Metadata, Terminology, and Provenance and Infra. The project makes an important contribution to increasing data literacy and establishing a data culture in the academic environment and beyond.</p>
                 </div>
             </div>
 
@@ -244,12 +289,12 @@
             <div class="col-md-4 flex-column pr-5 py-10">
                 <h4>PARTNERS AND FUNDERS</h4>
                 <h2>DALIA is possible thanks to our supporters!</h2>
-                <p>This project with the funding code 16DWWQP07A was funded by the Federal Ministry of Education and Research (BMBF) and the funding measure from the EU's Capacity Building and Resilience Facility.</p>
-                <button class="btn btn-primary mt-3"><a class="buttonlink" href="#">View all partners</a></button>
+                <p class="text-block">This project with the funding code 16DWWQP07A was funded by the Federal Ministry of Education and Research (BMBF) and the funding measure from the EU's Capacity Building and Resilience Facility.</p>
+                <button class="btn btn-primary mt-3 full-width"><a class="buttonlink" href="#">View all partners</a></button>
             </div>
 
             <!-- Right Column (8 col) -->
-            <div class="col-md-8 py-10 border-left pleft-5">
+            <div class="col-md-8 py-10 border-left pleft-5 mobile-hide">
                 <h4 class="black">Our Partners</h4>
                 
                 <!-- Logos Row 1 -->
@@ -264,9 +309,9 @@
                         <img src="assets/Logo Frame-2.png" alt="Logo 3" class="img-fluid">
                     </div>
                 </div>
-
+            
                 <!-- Logos Row 2 -->
-                <div class="row mb-3 mt-1">
+                <div class="row mb-3 d-none d-md-flex">
                     <div class="col-md-4 px-0">
                         <img src="assets/Logo Frame-3.png" alt="Logo 4" class="img-fluid">
                     </div>
@@ -277,20 +322,18 @@
                         <img src="assets/Logo Frame-5.png" alt="Logo 6" class="img-fluid">
                     </div>
                 </div>
-
+            
                 <!-- Logos Row 3 -->
-                <div class="row mt-1">
+                <div class="row mt-1 d-none d-md-flex">
                     <div class="col-md-4 px-0">
                         <img src="assets/Logo Frame-6.png" alt="Logo 7" class="img-fluid">
                     </div>
                     <div class="col-md-4">
-                        
                     </div>
                     <div class="col-md-4">
-                        
                     </div>
                 </div>
-
+            
                 <h4 class="m-50 black">Our Funders</h4>
                 <div class="row mb-3">
                     <div class="col-md-6 px-0">
@@ -300,10 +343,58 @@
                         <img src="assets/Logo Frame-1 Kopie.png" alt="Logo 2" class="img-fluid">
                     </div>
                 </div>
-
             </div>
 
-        </div>
+
+
+            <div class="full-width desktop-hide block">
+                <!-- Mobile adjusted section content here -->
+                <div class="full-width">
+                    <h4 class="black">Our Partners</h4>
+                </div>
+                
+                <!-- Logos Row 1 -->
+                <div class="d-flex full-width mt-4">
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame.png" alt="Logo 1" class="img-fluid">
+                    </div>
+
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame-1.png" alt="Logo 2" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="d-flex full-width mt-4">
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame-2.png" alt="Logo 1" class="img-fluid">
+                    </div>
+
+                    <div class="half-width px-0 d-flex justify-content-center pl-4">
+                        <img src="assets/Logo Frame-3.png" alt="Logo 2" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="d-flex full-width mt-4">
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame-4.png" alt="Logo 1" class="img-fluid">
+                    </div>
+
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame-5.png" alt="Logo 2" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="d-flex full-width mt-4">
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        <img src="assets/Logo Frame-6.png" alt="Logo 1" class="img-fluid">
+                    </div>
+
+                    <div class="half-width px-0 d-flex justify-content-center">
+                        
+                    </div>
+                </div>
+
+             </div>
     </div>
 </section>
 <!-- End of Partner Section -->
@@ -318,7 +409,7 @@
         <div class="row">
 
             <!-- Left Column (6 col) -->
-            <div class="col-md-6 py-10">
+            <div class="col-md-6 py-10 no-padding-bottom-mobile">
                 <div class="content">
                     <h4>GET SUPPORT</h4>
                     <h2>Get in touch with our team</h2>
@@ -327,7 +418,7 @@
             </div>
 
             <!-- Right Column (6 col) -->
-            <div class="col-md-6 py-10 pleft-5">
+            <div class="col-md-6 py-10 pleft-5 no-padding-mobile">
                 <!-- Contact Form -->
                 <form>
                     <div class="form-row">
@@ -358,10 +449,10 @@
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        <textarea class="form-control" id="message" rows="5" placeholder="What would you like to ask us?"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Contact Us</button>
+                    <button type="submit" class="btn btn-primary full-width">Contact Us</button>
                 </form>
             </div>
 
@@ -379,7 +470,7 @@
         <div class="row">
 
             <!-- Left Column (4 col) -->
-            <div class="col-md-4 px-0 py-4 mt-4">
+            <div class="col-md-4 px-0 py-4 mt-4 mobile-center footer-spacing-mobile">
                 <img src="assets/Logo Footer.png" alt="Footer Logo" class="img-fluid footer-logo">
             </div>
 
@@ -395,13 +486,13 @@
 
 <!-- Footer Section 2 -->
 <footer id="footer-section-2" class="bordered-content no-top-border">
-    <div class="container">
+    <div class="container no-padding-mobile">
         <div class="row">
 
             <!-- Left Column (4 col) -->
             <div class="col-md-4 px-0">
                 <!-- Section 1 -->
-                <div class="pright-5 py-5 my-3">
+                <div class="pright-5 py-5 my-3 padding-mobile">
                     <h3>Sign up to our Newsletter</h3>
                     <p>The DALIA project newsletter is published 4 times a year.</p>
                     <button class="btn btn-primary btn-block mt-4">Subscribe</button>
@@ -412,7 +503,7 @@
                 </div>
 
                 <!-- Section 2 -->
-                <div class="border-top pright-5 py-5 my-3">
+                <div class="border-top pright-5 py-5 my-3 mobile-hide">
                     <h6>Follow Us</h6>  
                     <div class="social-media-icons">              
                         <i class="fab fa-facebook-square mr-2"></i>
@@ -423,7 +514,7 @@
             </div>
 
             <!-- Right Column (8 col) -->
-            <div class="col-md-8 d-flex border-left py-5 pleft-5">
+            <div class="col-md-8 d-flex border-left py-5 pleft-5 border-top-mobile padding-mobile">
                 <!-- Column 1 -->
                 <div class="col-md-4 px-0 pr-4">
                     <h6>About DALIA</h6>
@@ -441,7 +532,7 @@
                 </div>
 
                 <!-- Column 2 -->
-                <div class="col-md-5 px-4">
+                <div class="col-md-5 px-4 mobile-hide">
                     <h6>Partners</h6>
                     <p class="footerp"><a href="" class="light">Technical University of Darmstadt</a></p>
                     <p class="footerp"><a href="" class="light">UMG - University Medical Center Goettingen</a></p>
@@ -477,6 +568,16 @@
 
                 </div>
 
+            </div>
+
+            <div class="full-width padding-mobile pright-5 py-5 my-3 desktop-hide">
+                <div class="absolute-divider"></div>
+                <h6>Follow Us</h6>  
+                <div class="social-media-icons">              
+                    <i class="fab fa-facebook-square mr-2"></i>
+                    <i class="fab fa-twitter-square mr-2"></i>
+                    <i class="fab fa-instagram-square"></i>
+                </div>
             </div>
 
         </div>
