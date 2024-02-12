@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Include necessary meta tags, stylesheets, and scripts for the header -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Component</title>
-    <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <!-- Additional styles go here -->
-</head>
-<body>
+<!-- Header Section -->
 
-    <!-- Navigation Bar -->
-<div class="spacer">
+<div class="nav-spacer">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-container">
         <div class="container-header">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand mobile-hide" href="#">
                 <img class="logo" src="assets/Logo.png" alt="Logo" width="100%">
             </a>
 
             <!-- Menu Items -->
-            <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Working Fields</a>
-                <a class="nav-link" href="#">Glossary</a>
-                <a class="nav-link" href="#">Events</a>
-                <a class="nav-link" href="#">Contact</a>
+            <div class="navbar-nav mobile-hide">
+                <a class="nav-link light active" href="#">Home</a>
+                <a class="nav-link light" href="#">Working Fields</a>
+                <a class="nav-link light" href="#">Glossary</a>
+                <a class="nav-link light" href="#">Events</a>
+                <a class="nav-link light" href="#">Contact</a>
             </div>
 
-            <!-- Divider with Search Button -->
-            <div class="divider">
+            <div class="divider mobile-hide">
                 <div class="line"></div>
-                <button class="btn btn-primary">Search Portal</button>
+                <button class="btn btn-primary"><a class="buttonlink" href="#">Search Portal</a></button>
+            </div>
+
+            <div class="container-header desktop-hide">
+                <div class="mobile-left-section border-right">
+                    <a class="navbar-brand brand-mobile full-width" href="#">
+                    <img class="logo mt-0" src="assets/Logo Icon.png" alt="Logo" width="100%">
+                </a>
+                </div>
+            
+                <div class="mobile-mid-section">
+                <p class="my-0 mx-4">Go to the DALIA Search Portal</p>
+                </div>
+
+                <div class="mobile-right-section border-left-mobile text-center">
+                    <i id="menu-button"><svg width="26" height="18" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.75" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                    <rect y="8.25" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                    <rect y="15.75" width="26" height="1.5" rx="0.75" fill="#000050"/>
+                    </svg></i>
+                    
+                </div>
             </div>
 
         </div>
     </nav>
 </div>
 
-</body>
-</html>
+
+
+<!-- Header Section -->

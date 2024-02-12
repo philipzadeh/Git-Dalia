@@ -195,6 +195,14 @@ a{
     justify-content: space-between;
 }
 
+.hero-section-2{
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .hero-inner{
     height: 100vh!important;
     padding: 14em 0em 7em 0em;
@@ -243,6 +251,13 @@ a{
     padding: 10% 0%;
 }
 
+
+.py-15{
+    padding: 15% 0%;
+}
+
+
+
 .pl-5{
     padding-left: 5em !important;
 }
@@ -253,6 +268,10 @@ a{
 
 .pleft-5{
     padding-left: 5em;
+}
+
+.pleft-8{
+    padding-left: 8em; 
 }
 
 .border{
@@ -327,10 +346,76 @@ a{
 
 .absolute-divider{
     height: 1px;
-    width: 100%;
+    width: calc(100% + 5em);
     position: absolute;
     top: 0;
+    background-color: #000050;
+    left: -5em;
 }
+
+.custom-tabs .nav-link {
+    border: 1px solid #000050;
+    border-radius: 0;
+    color: #000050;
+    padding: 12px 20px !important;
+}
+
+.custom-tabs .nav-link.active {
+    background-color: #000050;
+}
+
+.nav-link p{
+    margin: 0;
+}
+
+.custom-tabs .nav-link.active p, .custom-tabs .nav-link.active h5{
+    color: white !important;
+}
+
+.tab-content .active{
+    background-color: white !important;
+}
+
+.tabheading{
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.fill-white{
+    fill: white;
+}
+
+.fill-blue{
+    fill: #000050;
+}
+
+.custom-tabs .nav-link:hover .hover-white {
+    color: white !important;
+}
+
+.custom-tabs .nav-link:hover .hover-fill {
+    fill: white; 
+}
+
+.blue-box {
+    background-color: #000050;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.white{
+    color: white !important;
+}
+
+.light{
+    font-weight: 200 !important;
+}
+.blue-box-inside-wrapper{
+ padding: 10px 0px;
+ border-bottom: solid 1px #a7a7a7;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -353,7 +438,7 @@ a{
     }
 
      .mobile-hide{
-        display: none;
+        display: none !important;
      }
 
      .desktop-hide{
@@ -430,7 +515,7 @@ a{
         width: 100%;
     }
 
-    .pright-5{
+    .pright-5, .pleft-8{
         padding-right: 0;
     }
 
@@ -463,6 +548,10 @@ a{
     padding: 0 1.3em;
     }
 
+    .pb-10-mobile{
+    padding-bottom: 10%;
+    }
+
     .mobile-center{
         text-align: center;
     }
@@ -478,6 +567,10 @@ a{
 
     .border-top-mobile{
         border-top: solid 1px #000050 !important;
+    }
+
+    .full-width-mobile{
+        width: 100%;
     }
 
     
