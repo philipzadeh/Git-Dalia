@@ -286,6 +286,10 @@ a{
  border-top: none !important;
 }
 
+.no-border{
+    border: none !important;
+   }
+
 .border-left{
     border-left: 1px solid #000050 !important;
 }
@@ -296,6 +300,10 @@ a{
 
 .border-top{
     border-top: 1px solid #000050 !important;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #000050 !important;
 }
 
 .full-width{
@@ -414,6 +422,18 @@ a{
 .blue-box-inside-wrapper{
  padding: 10px 0px;
  border-bottom: solid 1px #a7a7a7;
+}
+
+.card-header:hover{
+    cursor: pointer;
+}
+
+.card-header{
+    margin-bottom: 0 !important;
+}
+
+.rotate{
+    transform: rotate(180deg); /* Rotate the icon 180 degrees */
 }
 
 

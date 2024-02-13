@@ -22,3 +22,24 @@ navLinks.forEach(navLink => {
         }, 10); // Delay of 0 milliseconds
     });
 });
+
+
+
+
+
+document.querySelectorAll('.card-header').forEach((item, index) => {
+    item.addEventListener('click', event => {
+        document.querySelectorAll('.card-header i:nth-child(2)').forEach(icon => {
+            icon.style.transform = 'rotate(0deg)';
+        });
+        
+        const isOpen = item.getAttribute('aria-expanded') === 'true';
+        const arrowIcon = item.querySelectorAll('i')[1]; 
+        
+        if (isOpen) {
+            arrowIcon.style.transform = 'rotate(0deg)';
+        } else {
+            arrowIcon.style.transform = 'rotate(180deg)';
+        }
+    });
+});
