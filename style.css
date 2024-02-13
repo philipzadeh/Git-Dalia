@@ -436,6 +436,31 @@ a{
     transform: rotate(180deg); /* Rotate the icon 180 degrees */
 }
 
+.single-event{
+
+    padding: 2.5em 0em;
+}
+
+.calendar-button{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin-right: 1px;
+}
+
+.height-50{
+    height: 45px; 
+}
+
+.blue-bg-box{
+    background-color: #000050;
+    color: white;
+    padding: 3px;
+    display: inline;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -487,10 +512,6 @@ a{
 
      .brand-mobile{
         margin-top: -3px;
-     }
-
-     #menu-button{
-        
      }
 
      .quote{
@@ -568,8 +589,28 @@ a{
     padding: 0 1.3em;
     }
 
+    .padding-mobile-2{
+        padding: 3em 1.3em;
+    }
+
+    .mt-1-mobile{
+        margin-top: 0.6em !important;
+    }
+
+    .mb-1-mobile{
+        margin-bottom: 0.7em !important;
+    }
+
+    .mt-2-mobile{
+        margin-top: 2em !important;
+    }
+
     .pb-10-mobile{
     padding-bottom: 10%;
+    }
+
+    .pt-10-mobile{
+        padding-top: 10%;
     }
 
     .mobile-center{
@@ -588,9 +629,17 @@ a{
     .border-top-mobile{
         border-top: solid 1px #000050 !important;
     }
+    
+    .border-bottom-mobile{
+        border-bottom: solid 1px #000050 !important;
+    }
 
     .full-width-mobile{
         width: 100%;
+    }
+
+    .mobile-button{
+        width: calc(100% - 92px);
     }
 
     

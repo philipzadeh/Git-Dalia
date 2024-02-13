@@ -1,3 +1,12 @@
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+
+
+
+
+
 // Get all nav links
 const navLinks = document.querySelectorAll('.nav-link');
 
