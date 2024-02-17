@@ -58,6 +58,12 @@ p{
     font-size: 0.9em;
 }
 
+li{
+    color: #000050;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
 .black{
     color: black !important;
 }
@@ -76,6 +82,10 @@ a{
     font-size: 0.9em;
     color: #000050 !important;
     font-weight: 600;
+}
+
+.bg-blue{
+    background-color: #000050;
 }
 
 .buttonlink{
@@ -247,15 +257,22 @@ a{
     margin-top: 60px !important;
 }
 
+.mt-25{
+    margin-top: 25px;
+}
+
 .py-10{
     padding: 10% 0%;
+}
+
+.pt-10{
+    padding-top: 10%;
 }
 
 
 .py-15{
     padding: 15% 0%;
 }
-
 
 
 .pl-5{
@@ -294,6 +311,10 @@ a{
     border-left: 1px solid #000050 !important;
 }
 
+.border-left-light{
+    border-left: 0.5px solid white;
+}
+
 .border-right{
     border-right: 1px solid #000050 !important;
 }
@@ -306,6 +327,10 @@ a{
     border-bottom: 1px solid #000050 !important;
 }
 
+.border-bottom-light{
+    border-bottom: 0.5px solid white !important;
+}
+
 .full-width{
     width: 100%;
 }
@@ -315,6 +340,10 @@ a{
 }
 
 .sixty-width{
+    width: 60%;
+}
+
+.seventy-width{
     width: 60%;
 }
 
@@ -458,7 +487,14 @@ a{
 .blue-bg-box{
     background-color: #000050;
     color: white;
-    padding: 3px;
+    padding: 3px 5px;
+    display: inline;
+}
+
+.gray-bg-box{
+    background-color: gray;
+    color: white;
+    padding: 3px 5px;
     display: inline;
 }
 
@@ -533,6 +569,10 @@ a{
 
     .border-left-mobile{
         border-left: solid 1px #000050 !important;
+    }
+
+    .border-bottom-light-mobile{
+        border-bottom: 1px solid white !important;
     }
 
     .pl-5{
