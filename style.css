@@ -190,10 +190,7 @@ a{
     width: 8rem;
 }
 
-
-
 /*------------- END HEADER & FOOTER CSS----------------*/
-
 
 .hero-section{
     height: 100vh;
@@ -302,6 +299,10 @@ a{
 .no-top-border{
  border-top: none !important;
 }
+
+.no-right-border{
+    border-right: none !important;
+   }
 
 .no-border{
     border: none !important;
@@ -448,6 +449,15 @@ a{
 .light{
     font-weight: 200 !important;
 }
+
+.bold{
+font-weight: 600;
+}
+
+.small{
+    font-size: 0.8em;
+}
+
 .blue-box-inside-wrapper{
  padding: 10px 0px;
  border-bottom: solid 1px #a7a7a7;
@@ -496,6 +506,22 @@ a{
     color: white;
     padding: 3px 5px;
     display: inline;
+}
+
+.imprint-margin{
+    margin-top: 1em;
+}
+
+.imprint-padding{
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.square{
+    height: 20px;
+    width: 20px;
+    background-color: #000050;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -564,7 +590,7 @@ a{
     }
 
     .border-left{
-        border: none !important;
+        border-left: none !important;
     }
 
     .border-left-mobile{
@@ -582,6 +608,10 @@ a{
 
     .pr-5{
         padding-right: 0 !important;
+    }
+
+    .px-5{
+        padding: 0;
     }
     
     .half-width{
@@ -681,7 +711,6 @@ a{
     .mobile-button{
         width: calc(100% - 92px);
     }
-
     
 }
 
