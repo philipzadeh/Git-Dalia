@@ -15,9 +15,9 @@ h1, h2, h3, h4, h5{
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 3.2em;
     letter-spacing: -3px;
-    line-height: 1em;
+    line-height: 1.1em;
     font-weight: 600 !important;
     margin-top: 25px;
 }
@@ -75,6 +75,12 @@ li{
 .light{
     font-weight: 200 !important;
     font-size: 1em;
+    cursor: pointer;
+}
+
+.light-medium{
+    font-weight: 100 !important;
+    font-size: 1.4em;
     cursor: pointer;
 }
 
@@ -552,6 +558,10 @@ font-weight: 600;
         display: flex;
      }
 
+     .desktop-hide-2{
+        display: block;
+     }
+
      .block{
         display: block;
      }
@@ -656,11 +666,15 @@ font-weight: 600;
     }
 
     .padding-mobile{
-    padding: 0 1.3em;
+    padding: 0 1.3em ;
     }
 
     .padding-mobile-2{
-        padding: 3em 1.3em;
+        padding: 3em 1.3em !important;
+    }
+
+    .padding-mobile-all{
+        padding: 1.3em;
     }
 
     .mt-1-mobile{
@@ -716,6 +730,10 @@ font-weight: 600;
 
 @media screen and (min-width: 768px) {
  .desktop-hide{
+    display: none;
+ }
+
+ .desktop-hide-2{
     display: none;
  }
 }
