@@ -64,6 +64,10 @@ li{
     font-size: 0.9em;
 }
 
+.fab{
+    font-size: 35px;
+}
+
 .black{
     color: black !important;
 }
@@ -138,6 +142,7 @@ a{
 
 .navbar{
     padding: 0 18px;
+    z-index: 999;
 }
 
 .navbar-brand {
@@ -168,6 +173,81 @@ a{
     background: #000050;
     color: white !important;
 }
+
+.mobile-version{
+width: 100%;
+background-color: white;
+z-index: 10;
+position: absolute;
+top: 0;
+left: 0;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.mobile-version-wrapper{
+    padding-top: 8em;
+    padding-bottom: 3em;
+    padding-left: calc(1.3em + 2px);
+    padding-right: calc(1.3em + 2px);
+}
+
+.mobile-version.desktop-hide.collapse.show{
+    height: 100vh;
+}
+
+.mobile-menu-heading{
+    font-size: 2em;
+
+}
+
+.mobile-link{
+    text-decoration: none;
+    padding-top: 2em;
+    padding-bottom: 1.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.mobile-link:hover{
+    text-decoration: none;
+}
+
+.mobile-menu-footer{
+    padding-top: 5em;
+    padding-bottom: 3em;
+    padding-left: calc(1.3em + 2px);
+    padding-right: calc(1.3em + 2px);
+}
+
+.transform-show{
+    transform: translateX(-100%);
+    transition: transform ease-in-out 0.3s;
+}
+
+.second{
+    transition: transform ease-in-out 0.3s;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+.social-media-icons-mobile{
+    margin-top: 2em;
+    
+}
+
 
 .logo{
     margin-top: 4px;
@@ -249,11 +329,12 @@ a{
 
 .feature-boxes{
     display: flex;
+    width: 100%;
     gap: 10px;
 }
 
 .feature-box{
-    width: 25%;
+    width: 25% ;
 }
 
 .m-50{
@@ -340,6 +421,10 @@ a{
 
 .full-width{
     width: 100%;
+}
+
+.full-width-max{
+    width: 200%;
 }
 
 .half-width{
@@ -568,6 +653,7 @@ font-weight: 600;
 
      .mobile-left-section, .mobile-right-section{
         width: 14%;
+        aspect-ratio: 1/1 !important;
     }
 
     .mobile-left-section{
@@ -575,11 +661,15 @@ font-weight: 600;
     }
 
     .mobile-right-section{
-        padding: 24px;
+        padding: 20px;
     }
         
     .mobile-mid-section{
             width: 72%;
+    }
+
+    .mobile-menu-hidden{
+        display: none;
     }
 
      .brand-mobile{
